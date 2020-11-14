@@ -141,9 +141,12 @@ int main()
 //	Kelas terbuka | Belajar C++ [Dasar] - 12 - Operator Logika, and, or, dan not
 	cout << "Operator Logika, and, or, dan not \n";
 	hasil = !(bool_int1 == bool_int2); /* !() = not/bukan */
-	cout << "Jika kita memakai operator perbandingan !() maka ketika nilainya tidak sama hasilnya : " << hasil << " = true" << endl;
+	cout << "Jika kita memakai operator logika !() maka ketika nilainya tidak sama hasilnya : " << hasil << " = true" << endl;
 	cout << endl;
 	
+	bool_int2 = 2;
+	hasil = (bool_int1 == 2) and (bool_int2 == 2);
+	cout << "Jika kita memakai operator logika (and) maka ketika semua kondisi true sama hasilnya : " << hasil << "= true" << endl;
 	
 	cin.get();
 	return 0;
