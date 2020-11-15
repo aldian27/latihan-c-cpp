@@ -149,6 +149,8 @@ int main()
 	cout << "Jika kita memakai operator logika (and) maka ketika semua kondisi true sama hasilnya : " << hasil << "= true" << endl;
 	
 	cin.get();
+//	NVitanovic | C++ Tutorial 1 - Your first program "Hello World"
+	system("pause");
 	return 0;
 	
 }
