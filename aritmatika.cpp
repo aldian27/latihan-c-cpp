@@ -32,5 +32,6 @@ int main() {
 	}
 	
 	cin.get();
+	system("pause");
 	return 0;
 }
