@@ -11,15 +11,15 @@ int main()
 
    char op ;
 
-   cout << "masukan angka pertama  :" ;
+   cout << "masukan angka pertama  : " ;
 
    cin >> a ;
 
-   cout << "masukan operasi hitung :" ;
+   cout << "masukan operasi hitung : " ;
 
    cin >> op ;
 
-   cout << "masukan angka kedua    :" ;
+   cout << "masukan angka kedua    : " ;
 
    cin >> b ;
 
@@ -51,13 +51,14 @@ int main()
 
     default :
 
-        cout << "invalid" ;
+        cout << "invalid \n" ;
 
 
 
    }
 
- 	cout << a << op << b << "=" << hasil ;
+ 	cout << a << " "<< op << " " << b << " " << "=" << " " << hasil << endl;
 	cin.get();
+	system("pause");
 	return 0;
 }
