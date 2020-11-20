@@ -125,15 +125,15 @@ int main()
 	bool_int1 = 2;
 	bool_int2 = 2;
 	hasil1 = (bool_int1 == bool_int2); /* sebanding */
-	cout << "Jika nilai a dan b sama maka hasil nya adalah : " << hasil1 << " = true" << endl;
+	cout << "Jika nilai a dan b sama maka hasil nya adalah : " << hasil1 << " = true \n";
 	bool_int2 = 3;
-	cout << "Jika nilai a dan b tidak sama maka hasinya adalah : " << hasil1 << " = false" << endl;
+	cout << "Jika nilai a dan b tidak sama maka hasinya adalah : " << hasil1 << " = false \n";
 	hasil2 = (bool_int1 != bool_int2); /* tidak sebanding */
-	cout << "Jika kita memakai operator perbandingan != maka ketika nilai tidak sama hasilnya : " << hasil2 << " = true" << endl;
+	cout << "Jika kita memakai operator perbandingan != maka ketika nilai tidak sama hasilnya : " << hasil2 << " = true \n";
 	hasil1 = (bool_int1 < bool_int2); /* kurang dari */
 	hasil2 = (bool_int1 > bool_int2); /* lebih dari */
-	cout << "Jika a kurang dari b maka hasilnya adalah : " << hasil1 << " = true" << endl;
-	cout << "Jika a lebih dari b maka hasilnya : 1 = true. Karena a kurang dari b maka hasilnya : " << hasil2 << " = false" << endl;
+	cout << "Jika a kurang dari b maka hasilnya adalah : " << hasil1 << " = true \n";
+	cout << "Jika a lebih dari b maka hasilnya : 1 = true. Karena a kurang dari b maka hasilnya : " << hasil2 << " = false \n";
 	hasil = (bool_int1 <= bool_int2); /* kurang dari atau sama dengan */
 	hasil = (bool_int1 >= bool_int2); /* lebih dari atau sama dengan */
 	cout << endl;
@@ -141,12 +141,36 @@ int main()
 //	Kelas terbuka | Belajar C++ [Dasar] - 12 - Operator Logika, and, or, dan not
 	cout << "Operator Logika, and, or, dan not \n";
 	hasil = !(bool_int1 == bool_int2); /* !() = not/bukan */
-	cout << "Jika kita memakai operator logika !() maka ketika nilainya tidak sama hasilnya : " << hasil << " = true" << endl;
+	cout << "Jika kita memakai operator logika !() maka ketika nilainya tidak sama hasilnya : " << hasil << " = true \n";
 	cout << endl;
 	
-	bool_int2 = 2;
-	hasil = (bool_int1 == 2) and (bool_int2 == 2);
-	cout << "Jika kita memakai operator logika (and) maka ketika semua kondisi true sama hasilnya : " << hasil << "= true" << endl;
+	number1 = 2;
+	number2 = 2;
+//	and : kedua nilai true = true
+	hasil = number1 and number2 == 2;
+	hasil = number1 && number2 == 2;
+	cout << "Jika kita memakai operator logika and/&& maka ketika semua kondisi true sama hasilnya : " << hasil << "= true \n";
+//	or : salah satu nilai true = true
+	hasil = number1 or number2 == 2;
+	hasil = number1 || number2 == 2;
+	cout << "Jika kita memakai operator logika or/|| maka ketika salah satu kondisi true sama hasilnya : " << hasil << "= true \n";
+	cout << endl;
+	
+//	Kelas terbuka | Belajar C++ [Dasar] - 13 - if Statement
+//	Kelas terbuka | Belajar C++ [Dasar] - 14 - if else
+	cout << "if statement \n";
+	cout << "Masukkan angka : "; cin >> number1;
+	
+//	if statement
+	if (number1 < 50) /* kondisi (dalam bentuk boolean */
+	{
+		/* statement */
+//		jika kondisi true program ini akan dijalankan
+		cout << "Angka kurang dari 50 \n";
+	} else {
+//		jika if false maka else akan dijalankan
+		cout << "Angka lebih dari 50 \n";
+	}
 	
 	cin.get();
 //	NVitanovic | C++ Tutorial 1 - Your first program "Hello World"
