@@ -162,15 +162,44 @@ int main()
 	cout << "Masukkan angka : "; cin >> number1;
 	
 //	if statement
-	if (number1 < 50) /* kondisi (dalam bentuk boolean */
+	if (number1 < 15) /* kondisi (dalam bentuk boolean */
 	{
 		/* statement */
 //		jika kondisi true program ini akan dijalankan
-		cout << "Angka kurang dari 50 \n";
+		cout << "Angka kurang dari 15 \n";
+	} else if (number1 < 25) 
+	{
+//		jika if false maka else if akan dijalankan
+		cout << "Angka kurang dari 25 \n";
 	} else {
-//		jika if false maka else akan dijalankan
-		cout << "Angka lebih dari 50 \n";
+//		jika kedua kondisi di atas false maka else akan dijalankan
+		cout << "Angka lebih dari 25 \n";
 	}
+	cout << endl;
+	
+//	Kelas terbuka | Belajar C++ [Dasar] - 15 - switch case
+	cout << "Masukkan angka di antara 1-5 :"; cin >> number1;
+	switch(number1){
+		case 1:
+			cout << "Angka yang anda masukkan : 1 \n";
+			break;
+		case 2:
+			cout << "Angka yang anda masukkan : 2 \n";
+			break;
+		case 3:
+			cout << "Angka yang anda masukkan : 3 \n";
+			break;
+		case 4:
+			cout << "Angka yang anda masukkan : 4 \n";
+			break;
+		case 5:
+			cout << "Angka yang anda masukkan : 5 \n";
+			break;
+		default:
+			cout << "Angka yang anda masukkan bukan 1-5";
+			break;
+	}
+	cout << endl;
 	
 	cin.get();
 //	NVitanovic | C++ Tutorial 1 - Your first program "Hello World"
